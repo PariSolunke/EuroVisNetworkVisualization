@@ -1,0 +1,62 @@
+
+svg {
+  font: 12px sans-serif;
+}
+.background {
+    fill: #eee;
+  }
+  
+  line {
+    stroke: #fff;
+  }
+
+  .selected{
+    z-index: 30;
+    font-weight: bold;
+    font-size: 15px;
+    fill: #ebaa32;
+    text-decoration: underline overline 2px solid red;
+
+
+  }
+
+  .cellStrong
+  {
+    stroke: #be0505;
+    stroke-width: 3;
+    z-index: 30;
+
+  }
+  
+  text.active {
+    fill: #be0505;
+    font-size: 14px;
+    z-index: 30;
+    font-weight: bold;
+
+  }
+
+  .tooltip { pointer-events: none; }
+
+  .hovered{
+    text-decoration:underline;
+    fill:#0d74c8;
+    font-weight:bold;
+    z-index:10;
+    font-size:14px;
+  }
+
+  table{
+   max-height: 400px;
+   overflow-y: scroll;
+   font-size: 17px; 
+   border-collapse:separate;
+border:1px solid black;
+width: 450px;
+border-spacing: 1 7px;
+  }
+
+  table th{
+
+    border-bottom:  1px solid black ;
+  }

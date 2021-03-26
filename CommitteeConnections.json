@@ -1,0 +1,2344 @@
+{
+    "nodes": [
+      {
+        "name": "A Abdul-Rahman",
+        "group": "Europe",
+        "institution": "King's College London"
+      },
+      {
+        "name": "W Aigner",
+        "group": "Europe",
+        "institution": "King's College London"
+        
+
+      },
+      {
+        "name": "G Andrienko",
+        "group": "Europe",
+        "institution": "Fraunhofer Institute IAIS"
+        
+      },
+      {
+        "name": "D Archambault",
+        "group": "Europe",
+        "institution": "Swansea University"
+      },
+      {
+        "name": "J Bernard",
+        "group": "North America",
+        "institution": "University of British Columbia"
+      },
+      {
+        "name": "J Beyer",
+        "group": "North America",
+        "institution": "Harvard University"
+      },
+      {
+        "name": "H Bhatia",
+        "group": "North America",
+        "institution": "Lawrence Livermore National Laboratory"
+      },
+      {
+        "name": "T Blascheck",
+        "group": "Europe",
+        "institution": "University of Stuttgart"
+      },
+      {
+        "name": "N Boukhelifa",
+        "group": "Europe",
+        "institution": "Universite Paris-Saclay"
+      },
+      {
+        "name": "S Bruckner",
+        "group": "Europe",
+        "institution": "University of Bergen"
+      },
+      {
+        "name": "H Carr",
+        "group": "Europe",
+        "institution": "University of Leeds"
+      },
+      {
+        "name": "R Chang",
+        "group": "North America",
+        "institution": "Tufts University"
+      },
+      {
+        "name": "W Chen",
+        "group": "Asia",
+        "institution": "Zhejiang University"
+      },
+      {
+        "name": "Y Chiang",
+        "group": "North America",
+        "institution": "New York University"
+      },
+      {
+        "name": "B Csébfalvi",
+        "group": "Europe",
+        "institution": "Budapest University of Technology and Economics"
+      },
+      {
+        "name": "S Diehl",
+        "group": "Europe",
+        "institution": "Trier University"
+      },
+      {
+        "name": "W Dou",
+        "group": "North America",
+        "institution": "University of North Carolina at Charlotte"
+      },
+      {
+        "name": "A Ebert",
+        "group": "Europe",
+        "institution": "University of Kaiserslautern"
+      },
+      {
+        "name": "D Ebert",
+        "group": "North America",
+        "institution": "Purdue University"
+      },
+      {
+        "name": "A Endert",
+        "group": "North America",
+        "institution": "Georgia Institute of Technology"
+      },
+      {
+        "name": "T Ertl",
+        "group": "Europe",
+        "institution": "University of Stuttgart"
+      },
+      {
+        "name": "H Fang",
+        "group": "Europe",
+        "institution": "Loughborough University"
+      },
+      {
+        "name": "J Fekete",
+        "group": "Europe",
+        "institution": "Universite Paris-Saclay"
+      },
+      {
+        "name": "I Fujishiro",
+        "group": "Asia",
+        "institution": "Keio University"
+      },
+      {
+        "name": "C Görg",
+        "group": "North America",
+        "institution": "University of Colorado"
+      },
+      {
+        "name": "C Healey",
+        "group": "North America",
+        "institution": "NC State University"
+      },
+      {
+        "name": "J Heer",
+        "group": "North America",
+        "institution": "University of Washington"
+      },
+      {
+        "name": "M Hlawitschka",
+        "group": "Europe",
+        "institution": "Leipzig University of Applied Sciences"
+      },
+      {
+        "name": "Y Jang",
+        "group": "Asia",
+        "institution": "Sejong University"
+      },
+      {
+        "name": "D Keefe",
+        "group": "North America",
+        "institution": "University of Minnesota"
+      },
+      {
+        "name": "A Knoll",
+        "group": "North America",
+        "institution": "Intel Corporation"
+      },
+      {
+        "name": "S Koch",
+        "group": "Europe",
+        "institution": "University of Stuttgart"
+      },
+      {
+        "name": "J Kohlhammer",
+        "group": "Europe",
+        "institution": "Fraunhofer IGD"
+      },
+      {
+        "name": "B Kozlikova",
+        "group": "Europe",
+        "institution": "Masaryk University"
+      },
+      {
+        "name": "D Laidlaw",
+        "group": "North America",
+        "institution": "Brown University"
+      },
+      {
+        "name": "R Laramee",
+        "group": "North America",
+        "institution": "University of Nottingham"
+      },
+      {
+        "name": "J Levine",
+        "group": "North America",
+        "institution": "University of Arizona"
+      },
+      {
+        "name": "A Lex",
+        "group": "North America",
+        "institution": "University of Utah"
+      },
+      {
+        "name": "E Marai",
+        "group": "North America",
+        "institution": "University of Illinois Chicago"
+      },
+      {
+        "name": "K Matkovic",
+        "group": "Europe",
+        "institution": "VRVis Research Center"
+      },
+      {
+        "name": "S Miksch",
+        "group": "Europe",
+        "institution": "Institute of Visual Computing and Human-Centered Technology"
+      },
+      {
+        "name": "R Minghim",
+        "group": "Europe",
+        "institution": "University College Cork"
+      },
+      {
+        "name": "K Moreland",
+        "group": "North America",
+        "institution": "Sandia National Laboratories"
+      },
+      {
+        "name": "S Oeltze",
+        "group": "Europe",
+        "institution": "Otto-von-Guericke-University Magdeburg"
+      },
+      {
+        "name": "M Pohl",
+        "group": "Europe",
+        "institution": "Vienna University of Technology"
+      },
+      {
+        "name": "B Preim",
+        "group": "Europe",
+        "institution": "University of Magdeburg"
+      },
+      {
+        "name": "H Qu",
+        "group": "Asia",
+        "institution": "Hong Kong University of Science and Technology"
+      },
+      {
+        "name": "C Rezk-Salama",
+        "group": "Europe",
+        "institution": "Trier University"
+      },
+      {
+        "name": "T Ropinski",
+        "group": "Europe",
+        "institution": "Ulm University"
+      },
+      {
+        "name": "P Rosenthal",
+        "group": "Europe",
+        "institution": "University of Rostock"
+      },
+      {
+        "name": "F Sadlo",
+        "group": "Europe",
+        "institution": "Heidelberg University"
+      },
+      {
+        "name": "B Santos",
+        "group": "Europe",
+        "institution": "University of Aveiro"
+      },
+      {
+        "name": "G Santucci",
+        "group": "Europe",
+        "institution": "Sapienza University of Rome"
+      },
+      {
+        "name": "A Satyanarayan",
+        "group": "North America",
+        "institution": "MIT"
+      },
+      {
+        "name": "G Scheuermann",
+        "group": "Europe",
+        "institution": "Leipzig University"
+      },
+      {
+        "name": "T Schreck",
+        "group": "Europe",
+        "institution": "Graz University of Technology"
+      },
+      {
+        "name": "T Schultz",
+        "group": "Europe",
+        "institution": "University of Bonn"
+      },
+      {
+        "name": "H Schulz",
+        "group": "Europe",
+        "institution": "Aarhus University"
+      },
+      {
+        "name": "M Sedlmair",
+        "group": "Europe",
+        "institution": "University of Stuttgart"
+      },
+      {
+        "name": "H Shen",
+        "group": "North America",
+        "institution": "Ohio State University"
+      },
+      {
+        "name": "C Silva",
+        "group": "North America",
+        "institution": "New York University"
+      },
+      {
+        "name": "D Silver",
+        "group": "North America",
+        "institution": "Rutgers University"
+      },
+      {
+        "name": "A Slingsby",
+        "group": "Europe",
+        "institution": "City University of London"
+      },
+      {
+        "name": "J Stasko",
+        "group": "North America",
+        "institution": "Georgia Institute of Technology"
+      },
+      {
+        "name": "S Takahashi",
+        "group": "Asia",
+        "institution": "University of Aizu"
+      },
+      {
+        "name": "H Theisel",
+        "group": "Europe",
+        "institution": "University of Magdeburg"
+      },
+      {
+        "name": "J Tierny",
+        "group": "Europe",
+        "institution": "CNRS"
+      },
+      {
+        "name": "C Tominski",
+        "group": "Europe",
+        "institution": "University of Rostock"
+      },
+      {
+        "name": "M Tory",
+        "group": "North America",
+        "institution": "Tableau Software"
+      },
+      {
+        "name": "X Tricoche",
+        "group": "North America",
+        "institution": "Purdue University"
+      },
+      {
+        "name": "C Turkay",
+        "group": "Europe",
+        "institution": "University of Warwick"
+      },
+      {
+        "name": "A Vilanova",
+        "group": "Europe",
+        "institution": "Eindhoven University of Technology"
+        
+      },
+      {
+        "name": "P Vázquez",
+        "group": "Europe",
+        "institution": "Universitat Politècnica de Catalunya"
+      },
+      {
+        "name": "G Weber",
+        "group": "North America",
+        "institution": "Lawrence Berkeley National Laboratory"
+      },
+      {
+        "name": "T Weinkauf",
+        "group": "Europe",
+        "institution": "KTH Royal Institute of Technology"
+      },
+      {
+        "name": "M Westenberg",
+        "group": "Europe",
+        "institution": "Eindhoven University of Technology"
+      },
+      {
+        "name": "R Westermann",
+        "group": "Europe",
+        "institution": "Technical University of Munich"
+      },
+      {
+        "name": "J Wood",
+        "group": "Europe",
+        "institution": "City University of London"
+      },
+      {
+        "name": "J Yang",
+        "group": "North America",
+        "institution": "University of North Carolina at Charlotte"
+      },
+      {
+        "name": "H Yen",
+        "group": "Asia",
+        "institution": "National Taiwan University"
+      },
+      {
+        "name": "H Yu",
+        "group": "North America",
+        "institution": "University of Nebraska–Lincoln"
+      },
+      {
+        "name": "X Yuan",
+        "group": "Asia",
+        "institution": "Peking University"
+      },
+      {
+        "name": "E Zhang",
+        "group": "North America",
+        "institution": "Oregon State University"
+      },
+      {
+        "name": "J Zhang",
+        "group": "Asia",
+        "institution": "Tianjin University"
+      }
+    ],
+    "links": [
+      {
+        "source": "A Abdul-Rahman",
+        "target": "D Archambault",
+        "value": "Swansea University",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Abdul-Rahman",
+        "target": "R Laramee",
+        "value": "Swansea University",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "J Beyer",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "S Bruckner",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "B Csébfalvi",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "R Laramee",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "K Matkovic",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "A Slingsby",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "C Turkay",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "J Wood",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "T Schultz",
+        "value": "University of Bonn",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Archambault",
+        "target": "R Laramee",
+        "value": "Swansea University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Archambault",
+        "target": "J Bernard",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Archambault",
+        "target": "H Carr",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Archambault",
+        "target": "C Healey",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Archambault",
+        "target": "M Tory",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "J Kohlhammer",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "T Schreck",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "R Westermann",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "H Carr",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "C Healey",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Bernard",
+        "target": "M Tory",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "S Bruckner",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "B Csébfalvi",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "R Laramee",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "K Matkovic",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "A Lex",
+        "value": "Harvard University",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Beyer",
+        "target": "C Turkay",
+        "value": "Harvard University",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "A Knoll",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "J Levine",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "A Lex",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "H Shen",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "J Tierny",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Bhatia",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "T Ertl",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "S Koch",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "F Sadlo",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "M Sedlmair",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "M Westenberg",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Blascheck",
+        "target": "H Schulz",
+        "value": "University of Calgary",
+        "connection": "Uni"
+      },
+      {
+        "source": "N Boukhelifa",
+        "target": "R Laramee",
+        "value": "University of Nottingham",
+        "connection": "Uni"
+      },
+      {
+        "source": "N Boukhelifa",
+        "target": "H Carr",
+        "value": "University of Leeds",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "S Oeltze",
+        "value": "University of Bergen",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "C Turkay",
+        "value": "University of Bergen",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "B Csébfalvi",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "R Laramee",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "K Matkovic",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Bruckner",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Carr",
+        "target": "C Healey",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Carr",
+        "target": "M Tory",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "D Laidlaw",
+        "value": "John Hopkins University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "Y Chiang",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "D Keefe",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "E Marai",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "J Stasko",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "W Dou",
+        "value": "University of North Carolina at Charlotte",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Chang",
+        "target": "J Yang",
+        "value": "University of North Carolina at Charlotte",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Chen",
+        "target": "H Yu",
+        "value": "Zhejiang University",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Chen",
+        "target": "D Ebert",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Chen",
+        "target": "Y Jang",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Chen",
+        "target": "X Tricoche",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "Y Chiang",
+        "target": "H Yen",
+        "value": "National Taiwan University",
+        "connection": "Uni"
+      },
+      {
+        "source": "Y Chiang",
+        "target": "D Keefe",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "Y Chiang",
+        "target": "D Laidlaw",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "Y Chiang",
+        "target": "J Stasko",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "R Laramee",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "K Matkovic",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Dou",
+        "target": "J Yang",
+        "value": "University of North Carolina at Charlotte",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Ebert",
+        "target": "M Hlawitschka",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Ebert",
+        "target": "A Knoll",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Ebert",
+        "target": "G Scheuermann",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Ebert",
+        "target": "X Tricoche",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Ebert",
+        "target": "G Weber",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "J Levine",
+        "value": "Ohio State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "H Shen",
+        "value": "Ohio State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "E Zhang",
+        "value": "Ohio State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "Y Jang",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "X Tricoche",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "J Heer",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "S Miksch",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Ebert",
+        "target": "A Satyanarayan",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Endert",
+        "target": "C Görg",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Endert",
+        "target": "J Stasko",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Endert",
+        "target": "E Zhang",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "S Koch",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "F Sadlo",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "M Sedlmair",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "M Westenberg",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "R Westermann",
+        "value": "University of Erlangen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
+        "source": "I Fujishiro",
+        "target": "S Takahashi",
+        "value": "University of Tokyo",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Görg",
+        "target": "T Schultz",
+        "value": "Saarland University",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Görg",
+        "target": "J Stasko",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Görg",
+        "target": "E Zhang",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Healey",
+        "target": "J Heer",
+        "value": "University of California at Berkeley",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Healey",
+        "target": "M Tory",
+        "value": "University of British Columbia",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Heer",
+        "target": "S Miksch",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Heer",
+        "target": "A Satyanarayan",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "S Oeltze",
+        "value": "Leipzig University",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "G Scheuermann",
+        "value": "Leipzig University",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "G Weber",
+        "value": "University of California at Davis",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "H Yu",
+        "value": "University of California at Davis",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "A Knoll",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "X Tricoche",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "Y Jang",
+        "target": "X Tricoche",
+        "value": "Purdue University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Keefe",
+        "target": "X Yuan",
+        "value": "University of Minnesota",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Keefe",
+        "target": "D Laidlaw",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Keefe",
+        "target": "E Marai",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Keefe",
+        "target": "J Stasko",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "J Levine",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "A Lex",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "H Shen",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "J Tierny",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "G Scheuermann",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "X Tricoche",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "G Weber",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Knoll",
+        "target": "H Yen",
+        "value": "University of Texas at Austin",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Koch",
+        "target": "F Sadlo",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Koch",
+        "target": "M Sedlmair",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Koch",
+        "target": "M Westenberg",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Koch",
+        "target": "T Ropinski",
+        "value": "Ulm University",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "T Schreck",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "R Westermann",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "M Sedlmair",
+        "value": "Ludwig Maximilian University of Munich",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "H Schulz",
+        "value": "Fraunhofer Institute for Computer Graphics Research",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Laidlaw",
+        "target": "R Westermann",
+        "value": "California Institute of Technology",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Laidlaw",
+        "target": "E Marai",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "D Laidlaw",
+        "target": "J Stasko",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "K Matkovic",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "R Laramee",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Levine",
+        "target": "A Lex",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Levine",
+        "target": "H Shen",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Levine",
+        "target": "J Tierny",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Levine",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Levine",
+        "target": "E Zhang",
+        "value": "Ohio State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "H Shen",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "J Tierny",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "C Turkay",
+        "value": "Harvard University",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "T Schreck",
+        "value": "TU Graz",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Lex",
+        "target": "H Schulz",
+        "value": "TU Graz",
+        "connection": "Uni"
+      },
+      {
+        "source": "E Marai",
+        "target": "J Stasko",
+        "value": "Brown University",
+        "connection": "Uni"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "S Miksch",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "M Pohl",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "A Satyanarayan",
+        "value": "Stanford University",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "S Oeltze",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "H Theisel",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Miksch",
+        "target": "T Weinkauf",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "B Preim",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "H Theisel",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "T Weinkauf",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "G Scheuermann",
+        "value": "Leipzig University",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "C Turkay",
+        "value": "University of Bergen",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Oeltze",
+        "target": "T Ropinski",
+        "value": "Linkoping University",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Pohl",
+        "target": "B Preim",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Pohl",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Pohl",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Preim",
+        "target": "H Theisel",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Preim",
+        "target": "T Weinkauf",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Preim",
+        "target": "M Sedlmair",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "B Preim",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Qu",
+        "target": "C Silva",
+        "value": "Stony Brook University",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Rezk-Salama",
+        "target": "A Vilanova",
+        "value": "University of Erlagen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
+        "source": "P Rosenthal",
+        "target": "H Schulz",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "P Rosenthal",
+        "target": "H Theisel",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "P Rosenthal",
+        "target": "C Tominski",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "P Rosenthal",
+        "target": "T Weinkauf",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "P Rosenthal",
+        "target": "M Sedlmair",
+        "value": "Jacobs University Bremen",
+        "connection": "Uni"
+      },
+      {
+        "source": "F Sadlo",
+        "target": "M Sedlmair",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "F Sadlo",
+        "target": "M Westenberg",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Scheuermann",
+        "target": "X Tricoche",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Scheuermann",
+        "target": "G Weber",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Scheuermann",
+        "target": "S Takahashi",
+        "value": "Arizona State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Scheuermann",
+        "target": "H Theisel",
+        "value": "Arizona State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Scheuermann",
+        "target": "H Yu",
+        "value": "University of California at Davis",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Schreck",
+        "target": "H Schulz",
+        "value": "TU Graz",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Schreck",
+        "target": "R Westermann",
+        "value": "TU Darmstadt",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Schulz",
+        "target": "H Theisel",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Schulz",
+        "target": "C Tominski",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Schulz",
+        "target": "T Weinkauf",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Sedlmair",
+        "target": "M Westenberg",
+        "value": "University of Stuttgart",
+        "connection": "Uni"
+      },
+      {
+        "source": "M Sedlmair",
+        "target": "A Vilanova",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Shen",
+        "target": "E Zhang",
+        "value": "Ohio State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Shen",
+        "target": "J Tierny",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Shen",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Slingsby",
+        "target": "C Turkay",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Slingsby",
+        "target": "J Wood",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Stasko",
+        "target": "E Zhang",
+        "value": "Georgia Tech",
+        "connection": "Uni"
+      },
+      {
+        "source": "S Takahashi",
+        "target": "H Theisel",
+        "value": "Arizona State University",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Theisel",
+        "target": "T Weinkauf",
+        "value": "Otto-von-Guericke University Magdeburg",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Theisel",
+        "target": "C Tominski",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "H Theisel",
+        "target": "E Zhang",
+        "value": "MPI Informatik",
+        "connection": "Uni"
+      },
+      {
+        "source": "J Tierny",
+        "target": "R Westermann",
+        "value": "University of Utah",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Tominski",
+        "target": "T Weinkauf",
+        "value": "University of Rostock",
+        "connection": "Uni"
+      },
+      {
+        "source": "X Tricoche",
+        "target": "G Weber",
+        "value": "TU Kaiserslautern",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Turkay",
+        "target": "J Wood",
+        "value": "City University of London",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Vilanova",
+        "target": "M Westenberg",
+        "value": "Eindhoven University of Technology",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Vilanova",
+        "target": "P Vázquez",
+        "value": "Polytechnic University of Catalonia",
+        "connection": "Uni"
+      },
+      {
+        "source": "G Weber",
+        "target": "H Yu",
+        "value": "University of California at Davis",
+        "connection": "Uni"
+      },
+      {
+        "source": "A Abdul-Rahman",
+        "target": "D Laidlaw",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "W Aigner",
+        "target": "C Tominski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "J Fekete",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "C Görg",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "J Kohlhammer",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "C Tominski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Archambault",
+        "target": "H Qu",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Archambault",
+        "target": "S Miksch",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Bernard",
+        "target": "M Sedlmair",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "W Aigner",
+        "target": "J Bernard",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "T Blascheck",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "N Boukhelifa",
+        "target": "J Fekete",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "N Boukhelifa",
+        "target": "J Wood",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "N Boukhelifa",
+        "target": "A Slingsby",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "G Weber",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "A Knoll",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "M Hlawitschka",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "G Scheuermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "C Silva",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Carr",
+        "target": "J Tierny",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Chang",
+        "target": "A Endert",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "W Chen",
+        "target": "J Zhang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "Y Chiang",
+        "target": "C Silva",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "B Csébfalvi",
+        "target": "T Weinkauf",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Diehl",
+        "target": "C Görg",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Diehl",
+        "target": "M Pohl",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "W Dou",
+        "target": "A Endert",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "D Silver",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "R Laramee",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "J Zhang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "G Weber",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "T Ertl",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Chang",
+        "target": "D Ebert",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "X Yuan",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "A Endert",
+        "target": "C Turkay",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "T Ertl",
+        "target": "C Rezk-Salama",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "T Ertl",
+        "target": "Y Jang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Fekete",
+        "target": "C Görg",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Fekete",
+        "target": "J Kohlhammer",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Fekete",
+        "target": "T Schreck",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Fekete",
+        "target": "J Stasko",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Görg",
+        "target": "J Kohlhammer",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Görg",
+        "target": "M Pohl",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Healey",
+        "target": "D Laidlaw",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Beyer",
+        "target": "M Hlawitschka",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "S Koch",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "M Hlawitschka",
+        "target": "E Zhang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Koch",
+        "target": "S Miksch",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Koch",
+        "target": "G Scheuermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "M Pohl",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Kohlhammer",
+        "target": "G Santucci",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "B Kozlikova",
+        "target": "T Ropinski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "B Kozlikova",
+        "target": "P Vázquez",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Laramee",
+        "target": "E Zhang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Levine",
+        "target": "C Silva",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "H Theisel",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "K Matkovic",
+        "target": "T Weinkauf",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Miksch",
+        "target": "C Tominski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Miksch",
+        "target": "H Schulz",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Minghim",
+        "target": "P Rosenthal",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "M Pohl",
+        "target": "G Santucci",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "M Pohl",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "B Preim",
+        "target": "T Ropinski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "B Preim",
+        "target": "R Westermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Qu",
+        "target": "X Yuan",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Rezk-Salama",
+        "target": "T Ropinski",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Rezk-Salama",
+        "target": "R Westermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "T Ropinski",
+        "target": "P Vázquez",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "B Santos",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "G Santucci",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Santucci",
+        "target": "H Schulz",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "A Satyanarayan",
+        "target": "J Stasko",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Ebert",
+        "target": "G Scheuermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Laramee",
+        "target": "G Scheuermann",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "G Andrienko",
+        "target": "T Schreck",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "T Schultz",
+        "target": "H Theisel",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "T Schultz",
+        "target": "A Vilanova",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "M Sedlmair",
+        "target": "M Tory",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "R Laramee",
+        "target": "D Silver",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Silver",
+        "target": "X Yuan",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "S Takahashi",
+        "target": "H Yen",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Tierny",
+        "target": "G Weber",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "J Tierny",
+        "target": "X Tricoche",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "C Silva",
+        "target": "J Tierny",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Laidlaw",
+        "target": "M Tory",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "D Laidlaw",
+        "target": "A Vilanova",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "W Chen",
+        "target": "J Yang",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "H Shen",
+        "target": "H Yu",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "K Moreland",
+        "target": "H Yu",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "X Yuan",
+        "target": "J Zhang",
+        "value": "0",
+        "connection": "Research"
+      }
+    ]
+  }
