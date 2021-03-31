@@ -5,8 +5,10 @@ console.log(box2.offsetWidth)
 
 var margin = {top: 100, right: 20, bottom: 0, left: 120},
     width = 1100,
-    height = 900;
-
+    height = 840;
+var selected=[];
+var insertIndex=0;
+var showIndex=0;
 var x = d3.scaleBand().range([0, width]),
     y = d3.scaleBand().range([0, height]),
 
@@ -177,23 +179,86 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   }
 }
 
+
  function LabelClick(d,p)
  {
+   console.log(selected,insertIndex)
   d3.selectAll(".cell").classed("cellStrong", false);
-
   d3.selectAll("text").classed("selected", false);
-  var selectedName=nodes[p].name  
-  var a=document.getElementById("rowlabel"+selectedName)
-  var b=document.getElementById("collabel"+selectedName)
-  d3.select(a).classed("selected", true);
-  d3.select(b).classed("selected", true);
-  d3.selectAll(".x"+p).classed("cellStrong", true);
-  d3.selectAll(".y"+p).classed("cellStrong", true);
 
-  document.getElementById("side").innerHTML="" ;
-  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:18px"> Node: '+nodes[p].name+', Current Affiliation: '+nodes[p].institution+'</div>'
+  if(selected.includes(p))
+  {
+    const index = selected.indexOf(p);   
+    selected.splice(index, 1);
+    insertIndex=selected.length;
+    if(showIndex==index)
+    showIndex=insertIndex-1;
+    else
+    showIndex=showIndex-1
+  }
+
+  else{
+  selected[insertIndex]=p;
+  showIndex=insertIndex;
+  insertIndex=(insertIndex+1)%5;
+
+  }
+  if(selected.length>0)
+  {
+  selected.forEach(element => {
+  if(element!=-1)
+  {
+    var selectedName=nodes[element].name  
+    var a=document.getElementById("rowlabel"+selectedName)
+    var b=document.getElementById("collabel"+selectedName)
+    d3.select(a).classed("selected", true);
+    d3.select(b).classed("selected", true);
+    d3.selectAll(".x"+element).classed("cellStrong", true);
+    d3.selectAll(".y"+element).classed("cellStrong", true);
+  }
+
+  });
+}
+if(selected.length>1)
+  {
+    document.getElementById("lbtn").disabled = false;
+    document.getElementById("rbtn").disabled = false;
+
+  }
+  else
+  {
+    document.getElementById("lbtn").disabled = true;
+    document.getElementById("rbtn").disabled = true;
+
+
+  }
+
+  if(showIndex<0)
+  showIndex=0;
+  displayTable()
+ }
+
+ document.getElementById("lbtn").addEventListener("click", function() {
+  
+  showIndex=(showIndex+1) % selected.length
+  displayTable()
+  
+});
+
+document.getElementById("rbtn").addEventListener("click", function() {
+  showIndex=(showIndex+1) % selected.length
+
+  displayTable()
+});
+
+ function displayTable(){
+
+  document.getElementById("side").innerHTML="";
+  if(selected.length>0)
+  {
+  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:18px"> Node: '+nodes[selected[showIndex]].name+', Current Affiliation: '+nodes[selected[showIndex]].institution+'</div>'
  var tableData=[]
-  var len=Object.keys(nodes[p].targets).length; 
+  var len=Object.keys(nodes[selected[showIndex]].targets).length; 
 
   for(i=0;i<len;i++)
   {
@@ -201,18 +266,19 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
       Name: "",
       Connection: ""
   };
-    tableData[i].Name=nodes[p].targets[i]
-    if(nodes[p].convalues[i]==0)
+    tableData[i].Name=nodes[selected[showIndex]].targets[i]
+    if(nodes[selected[showIndex]].convalues[i]==0)
       tableData[i].Connection="Temporary, Research Connection";
     else
-      tableData[i].Connection="Permanent, "+nodes[p].convalues[i];
+      tableData[i].Connection="Permanent, "+nodes[selected[showIndex]].convalues[i];
   }
   let table=document.getElementById("side").appendChild(document.createElement("table"));
   let data = Object.keys(tableData[0]);
 generateTableHead(table, data);
 generateTable(table, tableData);
+  }
 
- }
+ }                                                                
 
  function generateTableHead(table, data) {
   let thead = table.createTHead();

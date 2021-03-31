@@ -7,18 +7,63 @@
     </head>
     
     <body >
-        <div class="row" style="display: flex;"  > 
+        
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">EuroVis Committee Network Visualization</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Visualization <span class="sr-only">(current)</span></a></li>
+                  <li><a href="about.html">About</a></li>
+                 
+                </ul>
+                
+             
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>        
+          <div class="row" style="display: flex;"  > 
             
             <div class="col-sm-9" id="viz"> 
 
 
             </div>
             <div class="col-sm-3" style="margin-top:100px;"> 
+                <button id="lbtn" type="button" class="btn btn-dark pull-left" disabled><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                  </svg>
+                </button>
+                <button id="rbtn" type="button" class="btn btn-dark pull-right" disabled><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+                </button>
+
                 <div id="side">
 
 
                 </div>
-                
+                <div style="margin-top: 40px; font-size: 16px;">
+                <svg width="18" height="16">
+                    <rect width="18" height="16" style="fill:#7fdb6b;" />
+                  </svg> Temporary (Research) Connection <br>
+
+                  <svg width="18" height="16">
+                    <rect width="18" height="16" style="fill:#005a32;" />
+                  </svg> Permanent (Academic) Connection <br>
+
+                </div>  
             </div>
             
         </div>
