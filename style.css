@@ -1,9 +1,12 @@
 
-svg {
-  font: 12px sans-serif;
+body{
+  background-color: #fff;
+}
+text{
+  fill:#333333
 }
 .background {
-    fill: #eee;
+    fill: #ededed;
   }
   
   line {
@@ -13,24 +16,20 @@ svg {
   .selected{
     z-index: 11;
     font-weight: bold;
-    font-size: 14px;
-    fill:#0d74c8;
-    text-decoration: underline overline 2px solid red;
+    fill: #be0505;
+    text-decoration:underline;
 
 
   }
 
   .cellStrong
   {
-    stroke: #be0505;
-    stroke-width: 3;
-    z-index: 30;
+z-index: 30; stroke-width:3;
 
   }
   
   text.active {
-    fill: #be0505;
-    font-size: 14px;
+    fill: #2b97df;
     z-index: 30;
     font-weight: bold;
 
@@ -44,17 +43,13 @@ svg {
     
     font-weight:bold;
     z-index:10;
-    font-size:14px;
   }
 
   table{
    max-height: 400px;
    overflow-y: scroll;
-   font-size: 17px; 
    border-collapse:separate;
-border:1px solid black;
-width: 450px;
-border-spacing: 1 7px;
+  border:1px solid black;
   }
 
   table th{

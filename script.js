@@ -1,24 +1,26 @@
 let box = document.querySelector('#viz');
 let w = box.offsetWidth;
 let box2 = document.querySelector('#side');
-console.log(box2.offsetWidth)
 
-var margin = {top: 100, right: 20, bottom: 0, left: 120},
-    width = 1100,
-    height = 840;
+multiplier=window.innerWidth/1920
+
+
+
+
+
+var margin = {top: multiplier*100, right: multiplier*20, bottom: 0, left: multiplier*120},
+    width = multiplier*1100,
+    height = multiplier*830;
 var selected=[];
 var insertIndex=0;
 var showIndex=0;
 var x = d3.scaleBand().range([0, width]),
     y = d3.scaleBand().range([0, height]),
-
-    z = d3.scaleLinear().domain([0, 4]).clamp(true),
-    c = d3.scaleOrdinal(d3.schemeCategory10);
+    z = d3.scaleLinear().domain([0, 4]).clamp(true);
 
 var svg = d3.select("#viz").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .style("margin-left", margin.left + "px")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -145,12 +147,17 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
         .attr("x", function(d) { return x(d.x); })
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
-       // .style("fill-opacity", function(d) { return z(d.z); })
         .style("fill", function(d) { 
                                   if(d.connection!='Uni')
-                                      return "#7fdb6b";
+                                      return "#9ecae1";
                                     else
-                                  return  "#005a32"})
+                                  return  "#4292c6"})
+        .style("stroke", function(d) { 
+          if(d.connection!='Uni')
+              return "#9ecae1";
+            else
+          return  "#4292c6"})                          
+      
         .on("mouseover", mouseoverCell)
         .on("mouseout", mouseoutCell);
   }
@@ -256,7 +263,7 @@ document.getElementById("rbtn").addEventListener("click", function() {
   document.getElementById("side").innerHTML="";
   if(selected.length>0)
   {
-  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:18px"> Node: '+nodes[selected[showIndex]].name+', Current Affiliation: '+nodes[selected[showIndex]].institution+'</div>'
+  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:'+(multiplier*18)+'px"> Node: '+nodes[selected[showIndex]].name+', Current Affiliation: '+nodes[selected[showIndex]].institution+'</div>'
  var tableData=[]
   var len=Object.keys(nodes[selected[showIndex]].targets).length; 
 
@@ -376,6 +383,13 @@ function generateTable(table, data) {
     .style('opacity', 0)
     
   }
+  $('table').css({'font-size' : (18*multiplier)+'px'});
+$('table').css({'width' : (multiplier*450)+'px'});
+$('table').css({'border-spacing' : '1 '+(multiplier*7)+'px'});
+$('svg').css({'font-size' : (multiplier*12)+'px'});
+$('.selected').css({'font-size' : (multiplier*14)+'px'});
+$('.hovered').css({'font-size' : (multiplier*14)+'px'});
+$('text.active').css({'font-size' : (multiplier*14)+'px'});
 
   
 });
