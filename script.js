@@ -161,7 +161,7 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
         .on("mouseover", mouseoverCell)
         .on("mouseout", mouseoutCell);
   }
-  LabelClick(matrix,20);
+  
   function mouseoverCell(p) {
     d3.selectAll(".row text").classed("active", function(d, i) { return i == p.y; });
     d3.selectAll(".column text").classed("active", function(d, i) { return i == p.x; });
@@ -390,6 +390,6 @@ $('svg').css({'font-size' : (multiplier*12)+'px'});
 $('.selected').css({'font-size' : (multiplier*14)+'px'});
 $('.hovered').css({'font-size' : (multiplier*14)+'px'});
 $('text.active').css({'font-size' : (multiplier*14)+'px'});
-
+LabelClick(matrix,20);
   
 });
