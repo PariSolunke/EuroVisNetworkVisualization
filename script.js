@@ -8,14 +8,14 @@ multiplier=window.innerWidth/1920
 
 
 
-var margin = {top: multiplier*100, right: multiplier*20, bottom: 0, left: multiplier*120},
-    width = multiplier*1100,
+var margin = {top: 100, right: 20, bottom: 0, left: 20},
+    width = w-margin.left-margin.right,
     height = multiplier*830;
-var selected=[];
-var insertIndex=0;
-var showIndex=0;
-var x = d3.scaleBand().range([0, width]),
-    y = d3.scaleBand().range([0, height]),
+var selected=-1;
+
+
+var x = d3.scaleLinear().range([0, width]),
+    y = d3.scaleLinear().range([0, height]),
     z = d3.scaleLinear().domain([0, 4]).clamp(true);
 
 var svg = d3.select("#viz").append("svg")
@@ -64,28 +64,46 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
     matrix[sindex][tindex].value=link.value;
     matrix[tindex][sindex].value = link.value;
     matrix[tindex][sindex].connection = link.connection;
-    
     nodes[sindex].count += 1;
     nodes[tindex].count += 1;
     
     
   });
 
-  // Precompute the orders.
-  var orders = {
-
-    name: d3.range(n).map(function(n) {return n}),
-
-  };
-
   // The default sort order.
-  x.domain(orders.name);
-  y.domain(orders.name);
+  x.domain([0, 6]);
+  y.domain([0, 14]);
 
-  svg.append("rect")
-      .attr("class", "background")
-      .attr("width", width)
-      .attr("height", height);
+
+var group = svg.selectAll("g")
+    .data(nodes)
+  .enter().append("g")
+    .attr("class", "cell")
+    .attr("transform", function(d, i) { return "translate("+x(i%6)+"," + y(Math.floor(i/6)) + ")"; })
+    .attr("id", function(d,i){return d.name})
+    .on("click",function(){cellClick(this)});
+
+
+group.append("rect")
+    .attr("width", 0.9*(width/6))
+    .attr("height", 0.9*(height/14))
+    
+    .attr("rx",1)
+    
+    
+
+
+group.append("text")
+    .attr("transform", function(d, i) { return "translate("+0.9*(width/6)/2+"," + (height/14)/2 + ")"; })
+    .text(function(d) { return d.name; })
+    .attr("text-anchor", "middle")
+    .style("font-size", "13px");
+
+
+
+
+  
+
 
   var tooltip = d3.select('body')
       .append('div')
@@ -94,178 +112,47 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
       .style('background', 'white')
       .style('opacity', 0);
 
-  var row = svg.selectAll(".row")
-      .data(matrix)
-    .enter().append("g")
-      .attr("class", "row")
-     
-      .attr("transform", function(d, i) { return "translate(0," + y(i) + ")"; })
-      .each(row);
-
-  row.append("line")
-      .attr("x2", width);
-
-  row.append("text")
-      .attr("x", -6)
-      .attr("y", y.bandwidth() / 2)
-      .attr("text-anchor", "end")
-      .attr("id", function(d,i) { return "rowlabel"+nodes[i].name; })
-      .text(function(d, i) { return nodes[i].name; })
-      .on("mouseover", mouseoverLabelRow)
-      .on("mouseout", mouseoutLabel)
-      .on("click",LabelClick);
-  var column = svg.selectAll(".column")
-      .data(matrix)
-    .enter().append("g")
-      .attr("class", "column")
-      .attr("transform", function(d, i) { return "translate(" + x(i) + ")rotate(-90)"; });
-
-  column.append("line")
-      .attr("x1", -width);
-
-  column.append("text")
-      .attr("x", 6)
-      .attr("y", x.bandwidth() / 2)
-      .attr("id", function(d,i) { return "collabel"+nodes[i].name; })
-
-      .attr("text-anchor", "start")
-      .text(function(d, i) { return nodes[i].name; })
-      .attr("transform", "rotate(20)" )
-      .on("mouseover", mouseoverLabel)
-        .on("mouseout", mouseoutLabel)
-        .on("click",LabelClick);
-
-
-  function row(row) {
-    var cell = d3.select(this).selectAll(".cell")
-        .data(row.filter(function(d) { return d.z; }))
-      .enter().append("rect")
-  
-        .attr("class", function(d) { return "cell x"+d.x+" y"+d.y; })
-        
-
-        .attr("x", function(d) { return x(d.x); })
-        .attr("width", x.bandwidth())
-        .attr("height", y.bandwidth())
-        .style("fill", function(d) { 
-                                  if(d.connection!='Uni')
-                                      return "#9ecae1";
-                                    else
-                                  return  "#4292c6"})
-        .style("stroke", function(d) { 
-          if(d.connection!='Uni')
-              return "#9ecae1";
-            else
-          return  "#4292c6"})                          
-      
-        .on("mouseover", mouseoverCell)
-        .on("mouseout", mouseoutCell);
-  }
   
   function mouseoverCell(p) {
-    d3.selectAll(".row text").classed("active", function(d, i) { return i == p.y; });
-    d3.selectAll(".column text").classed("active", function(d, i) { return i == p.x; });
-    
-    tooltip.transition().duration(100)
-    .style('opacity', 1)
-    .style('pointer-events', 'none');
-  if(p.connection=='Uni'){
-  tooltip.html(
-    '<div style="font-weight: bold">' +'Names: '+nodes[p.x].name+','+nodes[p.y].name+
-     '<br>Connection Type: Permanent (Common University) <br>Common Affiliation: '+p.value +'</div>'
-  )
-    .style('left', (d3.event.pageX +70) + 'px')
-    .style('top', (d3.event.pageY -50) + 'px');
-  }
-  else{
-    tooltip.html(
-      '<div style="font-weight: bold">' +'Names: '+nodes[p.x].name+','+nodes[p.y].name+
-       '<br>Connection Type: Temporary (Coresearchers)</div>'
-    ).style('left', (d3.event.pageX +70) + 'px')
-    .style('top', (d3.event.pageY -50) + 'px');
-  }
+   
 }
 
 
- function LabelClick(d,p)
+ function cellClick(element)
  {
-   console.log(selected,insertIndex)
-  d3.selectAll(".cell").classed("cellStrong", false);
-  d3.selectAll("text").classed("selected", false);
+   d3.selectAll(".cell").classed("selected", false);
+   d3.selectAll(".cell").classed("permaactive", false);
+   d3.selectAll(".cell").classed("tempactive", false);
+  //d3.selectAll("text").classed("selected", false);
 
-  if(selected.includes(p))
-  {
-    const index = selected.indexOf(p);   
-    selected.splice(index, 1);
-    insertIndex=selected.length;
-    if(showIndex==index)
-    showIndex=insertIndex-1;
-    else
-    showIndex=showIndex-1
-  }
+  
+  d3.select(element).classed("selected","true");
+  
+  var n=d3.select(element).attr("id")
+  nodes.forEach(function(node, i) {
+    if (node.name==n)
+    {
+      selected=i;
+      displayTable()
+      
+    }
+     });
+  
+  //d3.select(element+">rect").style("fill","red")
 
-  else{
-  selected[insertIndex]=p;
-  showIndex=insertIndex;
-  insertIndex=(insertIndex+1)%5;
-
-  }
-  if(selected.length>0)
-  {
-  selected.forEach(element => {
-  if(element!=-1)
-  {
-    var selectedName=nodes[element].name  
-    var a=document.getElementById("rowlabel"+selectedName)
-    var b=document.getElementById("collabel"+selectedName)
-    d3.select(a).classed("selected", true);
-    d3.select(b).classed("selected", true);
-    d3.selectAll(".x"+element).classed("cellStrong", true);
-    d3.selectAll(".y"+element).classed("cellStrong", true);
-  }
-
-  });
-}
-if(selected.length>1)
-  {
-    document.getElementById("lbtn").disabled = false;
-    document.getElementById("rbtn").disabled = false;
-
-  }
-  else
-  {
-    document.getElementById("lbtn").disabled = true;
-    document.getElementById("rbtn").disabled = true;
-
-
-  }
-
-  if(showIndex<0)
-  showIndex=0;
-  displayTable()
+  //selected=p;
+  
  }
 
- document.getElementById("lbtn").addEventListener("click", function() {
-  
-  showIndex=(showIndex+1) % selected.length
-  displayTable()
-  
-});
-
-document.getElementById("rbtn").addEventListener("click", function() {
-  showIndex=(showIndex+1) % selected.length
-
-  displayTable()
-});
 
  function displayTable(){
 
   document.getElementById("side").innerHTML="";
-  if(selected.length>0)
+  if(selected.length!=-1)
   {
-  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:'+(multiplier*18)+'px"> Node: '+nodes[selected[showIndex]].name+', Current Affiliation: '+nodes[selected[showIndex]].institution+'</div>'
+  document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:'+(multiplier*18)+'px"> Node: '+nodes[selected].name+', Current Affiliation: '+nodes[selected].institution+'</div>'
  var tableData=[]
-  var len=Object.keys(nodes[selected[showIndex]].targets).length; 
+  var len=Object.keys(nodes[selected].targets).length; 
 
   for(i=0;i<len;i++)
   {
@@ -273,11 +160,18 @@ document.getElementById("rbtn").addEventListener("click", function() {
       Name: "",
       Connection: ""
   };
-    tableData[i].Name=nodes[selected[showIndex]].targets[i]
-    if(nodes[selected[showIndex]].convalues[i]==0)
+    tableData[i].Name=nodes[selected].targets[i]
+    if(nodes[selected].convalues[i]==0)
+      {
+        document.getElementById(nodes[selected].targets[i]).classList.add("tempactive")
+        
       tableData[i].Connection="Temporary, Research Connection";
+      }
     else
-      tableData[i].Connection="Permanent, "+nodes[selected[showIndex]].convalues[i];
+    {
+      document.getElementById(nodes[selected].targets[i]).classList.add("permaactive");  
+          tableData[i].Connection="Permanent, "+nodes[selected].convalues[i];
+    }
   }
   let table=document.getElementById("side").appendChild(document.createElement("table"));
   let data = Object.keys(tableData[0]);
@@ -309,12 +203,6 @@ function generateTable(table, data) {
   }
 }
 
-  function mouseoutCell() {
-    tooltip.html('')
-    tooltip
-    .style('opacity', 0)
-    d3.selectAll("text").classed("active", false);
-  }
 
   function mouseoverLabel(d,p) {
     nodes[p].targets.forEach(function(target, i) 
@@ -390,6 +278,6 @@ $('svg').css({'font-size' : (multiplier*12)+'px'});
 $('.selected').css({'font-size' : (multiplier*14)+'px'});
 $('.hovered').css({'font-size' : (multiplier*14)+'px'});
 $('text.active').css({'font-size' : (multiplier*14)+'px'});
-LabelClick(matrix,20);
-  
+
+cellClick(document.getElementById("A Abdul-Rahman"))  
 });

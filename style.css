@@ -2,49 +2,51 @@
 body{
   background-color: #fff;
 }
-text{
-  fill:#333333
+
+
+rect{
+  fill:grey;
 }
-.background {
-    fill: #ededed;
-  }
-  
-  line {
-    stroke: #fff;
-  }
-
-  .selected{
+  .selected>rect{
     z-index: 11;
+    
+    fill: #ebb553 /*24a12ad7*/;
+    
+
+
+  }
+
+  .permaactive>rect{
+    z-index: 11;
+    
+    fill:#3986b9;
+    
+
+
+  }
+  .permaactive>text{
+    fill: #eeeeee;
+
+  }
+
+  .tempactive>rect{
+    z-index: 11;
+    
+    fill: #aed3e7;
+    
+
+
+  }
+
+
+  .selected>text{
     font-weight: bold;
-    fill: #be0505;
-    text-decoration:underline;
-
-
+    fill: #222222;
+    
   }
-
-  .cellStrong
-  {
-z-index: 30; stroke-width:4;
-
-  }
-  
-  text.active {
-    fill: #2b97df;
-    z-index: 30;
-    font-weight: bold;
-
-  }
-
   .tooltip { pointer-events: none; }
 
-  .hovered{
-    text-decoration:underline;
-    fill: #009113;
-    
-    font-weight:bold;
-    z-index:10;
-  }
-
+  
   table{
    max-height: 400px;
    overflow-y: scroll;
