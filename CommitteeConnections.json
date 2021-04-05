@@ -2011,6 +2011,12 @@
         "connection": "Research"
       },
       {
+        "source": "A Endert",
+        "target": "E Marai",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
         "source": "T Ertl",
         "target": "C Rezk-Salama",
         "value": "0",
@@ -2127,6 +2133,12 @@
       {
         "source": "J Levine",
         "target": "C Silva",
+        "value": "0",
+        "connection": "Research"
+      },
+      {
+        "source": "A Lex",
+        "target": "E Marai",
         "value": "0",
         "connection": "Research"
       },

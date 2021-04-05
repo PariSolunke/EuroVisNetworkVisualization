@@ -14,6 +14,16 @@ var margin = {top: 100, right: 20, bottom: 0, left: 20},
 var selected=-1;
 
 
+var tooltip = d3.select('body')
+.append('div')
+.attr('id','tooltip')
+.style('position', 'absolute')
+.style('padding', '0 10px')
+.style('background', 'white')
+.style('opacity', 0);
+
+
+
 var x = d3.scaleLinear().range([0, width]),
     y = d3.scaleLinear().range([0, height]),
     z = d3.scaleLinear().domain([0, 4]).clamp(true);
@@ -28,6 +38,10 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   var matrix = [],
       nodes = CommitteeConnections.nodes,
       n = nodes.length;
+  
+  nodes.sort((a, b) => (a.group > b.group) ? 1 : (a.group === b.group) ? ((a.name > b.name) ? 1 : -1) : -1 );
+  console.log(nodes)
+    
 
   // Compute index per node.
   nodes.forEach(function(node, i) {
@@ -81,7 +95,9 @@ var group = svg.selectAll("g")
     .attr("class", "cell")
     .attr("transform", function(d, i) { return "translate("+x(i%6)+"," + y(Math.floor(i/6)) + ")"; })
     .attr("id", function(d,i){return d.name})
-    .on("click",function(){cellClick(this)});
+    .on("click",function(){cellClick(this)})
+    .on("mouseover",function(){mouseoverCell(this)})
+    .on("mouseout",function(){mouseoutCell(this)});
 
 
 group.append("rect")
@@ -95,9 +111,18 @@ group.append("rect")
 
 group.append("text")
     .attr("transform", function(d, i) { return "translate("+0.9*(width/6)/2+"," + (height/14)/2 + ")"; })
-    .text(function(d) { return d.name; })
+    .text(function(d) { return d.name})
     .attr("text-anchor", "middle")
-    .style("font-size", "13px");
+    .style("font-size", (multiplier*18)+"px")
+    .attr("dy","-0.5em");
+
+group.append("text")
+    .attr("transform", function(d, i) { return "translate("+0.9*(width/6)/2+"," + (height/14)/2 + ")"; })
+    .text(function(d) { return d.group})
+    .attr("text-anchor", "middle")
+    .style("font-size", (multiplier*12.5)+"px")
+    .attr("dy","1em");
+
 
 
 
@@ -105,16 +130,38 @@ group.append("text")
   
 
 
-  var tooltip = d3.select('body')
-      .append('div')
-      .style('position', 'absolute')
-      .style('padding', '0 10px')
-      .style('background', 'white')
-      .style('opacity', 0);
-
   
-  function mouseoverCell(p) {
+  function mouseoverCell(element) {
+    console.log("Mousedover")
+    var n=d3.select(element).attr("id");
+    var p=0;
+    for(i=0;i<nodes.length;i++)
+    { 
+      if (nodes[i].name==n)
+        {
+          p=i;
+          break;
+        }
+
+    } 
+    console.log(p)
+    tooltip.transition().duration(100)
+    .style('opacity', .95)
+  tooltip.html(
+    '<div style="font-weight: bold">' +'Name: '+nodes[p].name+'<br>Affiliation: '+nodes[p].institution+
+     '<br>Region: '+nodes[p].group +'<br>Connections: '+nodes[p].count +'</div>'
+  )
+    .style('left', (d3.event.pageX +70) + 'px')
+    .style('top', (d3.event.pageY -50) + 'px');
    
+}
+
+function mouseoutCell() {
+  console.log("Mousedout")
+  document.getElementById("tooltip").innerHTML="";
+  document.getElementById("tooltip").style.opacity=0;
+
+  
 }
 
 
@@ -123,7 +170,6 @@ group.append("text")
    d3.selectAll(".cell").classed("selected", false);
    d3.selectAll(".cell").classed("permaactive", false);
    d3.selectAll(".cell").classed("tempactive", false);
-  //d3.selectAll("text").classed("selected", false);
 
   
   d3.select(element).classed("selected","true");
@@ -137,10 +183,6 @@ group.append("text")
       
     }
      });
-  
-  //d3.select(element+">rect").style("fill","red")
-
-  //selected=p;
   
  }
 
@@ -204,80 +246,13 @@ function generateTable(table, data) {
 }
 
 
-  function mouseoverLabel(d,p) {
-    nodes[p].targets.forEach(function(target, i) 
-    {
-      var a=document.getElementById("rowlabel"+target)
-      var b=document.getElementById("collabel"+target)
-      d3.select(a).classed("active", true);
-      d3.select(b).classed("active", true);
-    });
-    var a=document.getElementById("rowlabel"+nodes[p].name)
-      var b=document.getElementById("collabel"+nodes[p].name)
-    d3.select(a)
-    .classed("hovered",true)
-    d3.select(b)
-    .classed("hovered",true)
+ 
 
-
-    tooltip.transition().duration(100)
-    .style('opacity', .95)
-    .style('pointer-events', 'none')
-  tooltip.html(
-    '<div style="font-weight: bold">' +'Name: '+nodes[p].name+'<br>Affiliation: '+nodes[p].institution+
-     '<br>Region: '+nodes[p].group +'<br>Connections: '+nodes[p].count +'</div>'
-  )
-    .style('left', (d3.event.pageX +70) + 'px')
-    .style('top', (d3.event.pageY -50) + 'px');
   
-  }
-  
-  function mouseoverLabelRow(d,p) {
-    nodes[p].targets.forEach(function(target, i) 
-    {
-      var a=document.getElementById("rowlabel"+target)
-      var b=document.getElementById("collabel"+target)
-
-      d3.select(a).classed("active", true);
-      d3.select(b).classed("active", true);
-
-
-    });
-    var a=document.getElementById("rowlabel"+nodes[p].name)
-    var b=document.getElementById("collabel"+nodes[p].name)
-  d3.select(a)
-  .classed("hovered",true)
-  d3.select(b)
-  .classed("hovered",true)
-  
-  tooltip.transition().duration(100)
-    .style('opacity', 1)
-    .style('pointer-events', 'none');  
-  tooltip.html(
-    '<div style="font-weight: bold">' +'Name: '+nodes[p].name+'<br>Affiliation: '+nodes[p].institution+
-     '<br>Region: '+nodes[p].group +'<br>Connections: '+nodes[p].count +'</div>'
-  )
-    .style('left', (d3.event.pageX +50 ) + 'px')
-    .style('top', (d3.event.pageY -110) + 'px');
-  
-  }
-
-  function mouseoutLabel() {
-    d3.selectAll("text").classed("active", false);
-    d3.selectAll("text").classed("hovered", false);
-
-    tooltip.html('')
-    tooltip
-    .style('opacity', 0)
-    
-  }
   $('table').css({'font-size' : (18*multiplier)+'px'});
 $('table').css({'width' : (multiplier*450)+'px'});
 $('table').css({'border-spacing' : '1 '+(multiplier*7)+'px'});
-$('svg').css({'font-size' : (multiplier*12)+'px'});
-$('.selected').css({'font-size' : (multiplier*14)+'px'});
-$('.hovered').css({'font-size' : (multiplier*14)+'px'});
-$('text.active').css({'font-size' : (multiplier*14)+'px'});
+
 
 cellClick(document.getElementById("A Abdul-Rahman"))  
 });
