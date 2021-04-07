@@ -90,7 +90,10 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   x.domain([0, 6]);
   y.domain([0, 14]);
   uniSet.delete("0");
-  uniSet.forEach(addOption);
+  unis=Array.from(uniSet);
+  unis.sort();
+
+  unis.forEach(addOption);
 
 var group = svg.selectAll("g")
     .data(nodes)
