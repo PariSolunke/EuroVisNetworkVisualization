@@ -8,11 +8,11 @@ multiplier=window.innerWidth/1920
 
 
 
-var margin = {top: 100, right: 20, bottom: 0, left: 20},
+var margin = {top: 20, right: 20, bottom: 0, left: 20},
     width = w-margin.left-margin.right,
     height = multiplier*830;
 var selected=-1;
-
+var uniSelect=document.getElementById("uniSelect");
 
 var tooltip = d3.select('body')
 .append('div')
@@ -25,8 +25,8 @@ var tooltip = d3.select('body')
 
 
 var x = d3.scaleLinear().range([0, width]),
-    y = d3.scaleLinear().range([0, height]),
-    z = d3.scaleLinear().domain([0, 4]).clamp(true);
+    y = d3.scaleLinear().range([0, height]);
+
 
 var svg = d3.select("#viz").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -40,7 +40,6 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
       n = nodes.length;
   
   nodes.sort((a, b) => (a.group > b.group) ? 1 : (a.group === b.group) ? ((a.name > b.name) ? 1 : -1) : -1 );
-  console.log(nodes)
     
 
   // Compute index per node.
@@ -51,6 +50,8 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
     node.convalues=[]
     matrix[i] = d3.range(n).map(function(j) { return {x: j, y: i, z: 0, connection:"", value:""}; });
   });
+
+  let uniSet = new Set()
   
   // Convert links to matrix; count character occurrences.
   CommitteeConnections.links.forEach(function(link) {
@@ -61,13 +62,14 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
       {
         nodes[i].targets.push(link.target)
         nodes[i].convalues.push(link.value)
+        uniSet.add(link.value)
         sindex=i;  
       }
       else if (nodes[i].name == link.target)
       {
       nodes[i].targets.push(link.source)
       nodes[i].convalues.push(link.value)
-
+      uniSet.add(link.value)
       tindex=i;
       }
     }
@@ -87,7 +89,8 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   // The default sort order.
   x.domain([0, 6]);
   y.domain([0, 14]);
-
+  uniSet.delete("0");
+  uniSet.forEach(addOption);
 
 var group = svg.selectAll("g")
     .data(nodes)
@@ -132,7 +135,6 @@ group.append("text")
 
   
   function mouseoverCell(element) {
-    console.log("Mousedover")
     var n=d3.select(element).attr("id");
     var p=0;
     for(i=0;i<nodes.length;i++)
@@ -144,7 +146,6 @@ group.append("text")
         }
 
     } 
-    console.log(p)
     tooltip.transition().duration(100)
     .style('opacity', .95)
   tooltip.html(
@@ -157,7 +158,6 @@ group.append("text")
 }
 
 function mouseoutCell() {
-  console.log("Mousedout")
   document.getElementById("tooltip").innerHTML="";
   document.getElementById("tooltip").style.opacity=0;
 
@@ -167,6 +167,12 @@ function mouseoutCell() {
 
  function cellClick(element)
  {
+  $('#uniSelect').val("0");
+
+  document.getElementById("tablediv").style.display="block";
+  document.getElementById("uniLegend").style.display="none";
+
+  d3.selectAll(".cell").classed("uniSelected", false);
    d3.selectAll(".cell").classed("selected", false);
    d3.selectAll(".cell").classed("permaactive", false);
    d3.selectAll(".cell").classed("tempactive", false);
@@ -190,7 +196,7 @@ function mouseoutCell() {
  function displayTable(){
 
   document.getElementById("side").innerHTML="";
-  if(selected.length!=-1)
+  if(selected!=-1)
   {
   document.getElementById("side").innerHTML='<div style="font-weight: bold; text-align:center;font-size:'+(multiplier*18)+'px"> Node: '+nodes[selected].name+', Current Affiliation: '+nodes[selected].institution+'</div>'
  var tableData=[]
@@ -245,14 +251,56 @@ function generateTable(table, data) {
   }
 }
 
+function addOption(value){
+  uniSelect.options[uniSelect.options.length] = new Option(value, value);
 
- 
+
+}
+
+
+function changeSelect(){
+  var uniName = uniSelect.options[uniSelect.selectedIndex].value;
+  document.getElementById("uniLegend").innerHTML="";
+  d3.selectAll(".cell").classed("uniSelected", false);
+  if (uniName!='0')
+  {
+    
+   selected=-1;
+   document.getElementById("tablediv").style.display="none";
+   document.getElementById("uniLegend").style.display="block";
+
+   d3.selectAll(".cell").classed("selected", false);
+   d3.selectAll(".cell").classed("permaactive", false);
+   d3.selectAll(".cell").classed("tempactive", false);
+
+   nodes.forEach(function(node) {
+    if (node.convalues.includes(uniName))
+    {
+      document.getElementById(node.name).classList.add("uniSelected")
+    }
+
+   })
+   document.getElementById("uniLegend").innerHTML='<svg width="18" height="16"> <rect width="18" height="16" style="fill:#2c8150;" /> </svg>'+ uniName;
+  
+   displayTable();
+
+  }
+  else{
+    document.getElementById("tablediv").style.display="block";
+    document.getElementById("uniLegend").style.display="none";
+
+  }
+
+
+}
 
   
   $('table').css({'font-size' : (18*multiplier)+'px'});
 $('table').css({'width' : (multiplier*450)+'px'});
 $('table').css({'border-spacing' : '1 '+(multiplier*7)+'px'});
 
+$('#uniSelect').on('change', function() {
+  changeSelect();});
 
 cellClick(document.getElementById("A Abdul-Rahman"))  
 });

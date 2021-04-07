@@ -16,6 +16,8 @@ rect{
 
   }
 
+
+
   .permaactive>rect{
     z-index: 11;
     
@@ -45,6 +47,20 @@ rect{
     
   }
   .tooltip { pointer-events: none; }
+
+  .uniSelected>rect{
+    fill: #2c8150 /*24a12ad7*/;
+    
+
+
+  }
+
+  .uniSelected>text{
+    font-weight: bold;    
+
+    fill: #eeeeee;
+
+  }
 
   
   table{
