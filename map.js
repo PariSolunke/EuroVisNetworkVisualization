@@ -69,7 +69,7 @@ function topUnis(){
               .style('pointer-events', 'none')
           
             tooltip.html('<div style=" font-weight: bold">' +d.University+'<br>Affililations: '+d.Affiliations+'</div>')
-            .style('left', (d3.event.pageX -65) + 'px')
+            .style('left', (d3.event.pageX -55) + 'px')
             .style('top', (d3.event.pageY +40) + 'px')
           })
           .on('mouseout', function(d) {tooltip.html('')})
@@ -131,7 +131,7 @@ function topResearchers(){
               .style('pointer-events', 'none')
           
             tooltip.html('<div style=" font-weight: bold">' +d.Name+'<br>Institution: '+d.Affiliation+'<br>Connections: '+d.count+'</div>')
-            .style('left', (d3.event.pageX -55) + 'px')
+            .style('left', (d3.event.pageX -65) + 'px')
             .style('top', (d3.event.pageY +40) + 'px')
           })
           .on('mouseout', function(d) {tooltip.html('')})
