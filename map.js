@@ -55,7 +55,7 @@ function topUnis(){
 
         var uniColors= d3.scaleLinear()
                 .domain([4,11])
-                .range(["#eff3ff","#08519c"]);
+                .range(["#fcfbfd","#54278f"]);
 
         svg.append("g")
         .selectAll("rect")
