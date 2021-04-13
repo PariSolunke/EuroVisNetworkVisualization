@@ -94,6 +94,8 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   unis.sort();
 
   unis.forEach(addOption);
+  
+
 
 var group = svg.selectAll("g")
     .data(nodes)
@@ -128,15 +130,8 @@ group.append("text")
     .attr("text-anchor", "middle")
     .style("font-size", (multiplier*12.5)+"px")
     .attr("dy","1em");
-
-
-
-
-
   
 
-
-  
   function mouseoverCell(element) {
     var n=d3.select(element).attr("id");
     var p=0;

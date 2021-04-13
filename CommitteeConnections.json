@@ -156,7 +156,7 @@
       {
         "name": "A Knoll",
         "group": "North America",
-        "institution": "Intel Corporation"
+        "institution": "University of Utah"
       },
       {
         "name": "S Koch",
@@ -180,7 +180,7 @@
       },
       {
         "name": "R Laramee",
-        "group": "North America",
+        "group": "Europe",
         "institution": "University of Nottingham"
       },
       {
@@ -206,7 +206,7 @@
       {
         "name": "S Miksch",
         "group": "Europe",
-        "institution": "Institute of Visual Computing and Human-Centered Technology"
+        "institution": "TU Wien"
       },
       {
         "name": "R Minghim",
@@ -226,12 +226,12 @@
       {
         "name": "M Pohl",
         "group": "Europe",
-        "institution": "Vienna University of Technology"
+        "institution": "TU Wien"
       },
       {
         "name": "B Preim",
         "group": "Europe",
-        "institution": "University of Magdeburg"
+        "institution": "Otto-von-Guericke-University Magdeburg"
       },
       {
         "name": "H Qu",
@@ -331,7 +331,7 @@
       {
         "name": "H Theisel",
         "group": "Europe",
-        "institution": "University of Magdeburg"
+        "institution": "Otto-von-Guericke-University Magdeburg"
       },
       {
         "name": "J Tierny",
