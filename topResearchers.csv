@@ -1,17 +1,84 @@
-﻿Name,Group,Affiliation,count,lat,lng
-S Miksch,Europe,TU Wien,20,48.5007,15.8559
-M Sedlmair,Europe,University of Stuttgart,19,48.7815,9.1736
-D Ebert,North America,Purdue University,18,40.4237,-86.9212
-R Laramee,North America,University of Nottingham,17,52.9548,-1.1581
-A Vilanova,Europe,Eindhoven University of Technology,15,51.4486,5.4907
-B Preim,Europe,University of Magdeburg,15,52.1397,11.6474
+﻿name,group,institution,count,lat,lng
+S Takahashi,Asia,University of Aizu,4,37.5238,139.9374
+I Fujishiro,Asia,Keio University,1,35.649,139.7429
+Y Jang,Asia,Sejong University,4,37.4565,126.95
+H Yen,Asia,National Taiwan University,3,25.0173,121.5398
+W Chen,Asia,Zhejiang University,6,30.2582,120.1192
+J Zhang,Asia,Tianjin University,3,39.0868,117.152
+X Yuan,Asia,Peking University,5,40,116.3059
+H Qu,Asia,Hong Kong University of Science and Technology,3,22.3364,114.2655
+B Csébfalvi,Europe,Budapest University of Technology and Economics,11,47.4813,19.0555
+T Weinkauf,Europe,KTH Royal Institute of Technology,9,59.3499,18.0703
+B Kozlikova,Europe,Masaryk University,2,49.1986,16.6054
 M Pohl,Europe,TU Wien,15,47.7626,16.495
-G Scheuermann,Europe,Leipzig University,13,51.3397,12.3731
-R Westermann,Europe,Technical University of Munich,13,48.1497,11.5679
-A Knoll,North America,University of Utah,13,40.7649,-111.8421
-J Beyer,North America,Harvard University,13,42.377,-71.1167
+S Miksch,Europe,TU Wien,20,48.5007,15.8559
+T Schreck,Europe,Graz University of Technology,7,47.0694,15.4504
 K Matkovic,Europe,VRVis Research Center,12,47.7626,15.2
-G Andrienko,Europe,Fraunhofer Institute IAIS,12,50.7492,7.202
-H Theisel,Europe,University of Magdeburg,12,52.1397,11.6474
+G Santucci,Europe,Sapienza University of Rome,4,41.9038,12.5144
+G Scheuermann,Europe,Leipzig University,13,51.5,12.75
+M Hlawitschka,Europe,Leipzig University of Applied Sciences,11,51,12.5
+C Tominski,Europe,University of Rostock,7,54.3,11.9
+P Rosenthal,Europe,University of Rostock,6,53.9,12.5
+B Preim,Europe,Otto-von-Guericke-University Magdeburg,15,52.1397,11.6474
+H Theisel,Europe,Otto-von-Guericke-University Magdeburg,12,52.7,12.2
+S Oeltze,Europe,Otto-von-Guericke-University Magdeburg,9,51.6,11.1
+R Westermann,Europe,Technical University of Munich,15,48.1497,11.5679
+H Schulz,Europe,Aarhus University,10,56.1681,10.203
+T Ropinski,Europe,Ulm University,6,48.1,10.4
+M Sedlmair,Europe,University of Stuttgart,19,49.3,9.2
+T Ertl,Europe,University of Stuttgart,11,48.8,9.75
+S Koch,Europe,University of Stuttgart,9,48.8,8.65
+T Blascheck,Europe,University of Stuttgart,7,48.3,9.2
+F Sadlo,Europe,Heidelberg University,5,49.7,8.6703
+J Kohlhammer,Europe,Fraunhofer IGD,10,50.4,8.53
+A Ebert,Europe,TU Kaiserslautern,5,49.4243,7.7447
+G Andrienko,Europe,Fraunhofer Institute IAIS,12,51.5,7.7
+T Schultz,Europe,University of Bonn,4,50.8,7.2
+C Rezk-Salama,Europe,Trier University,6,49.6,6.6
+S Diehl,Europe,Trier University,2,50.1,6.6884
+A Vilanova,Europe,Eindhoven University of Technology,17,51.4486,5.4907
+M Westenberg,Europe,Eindhoven University of Technology,6,52,5.1
 S Bruckner,Europe,University of Bergen,12,60.3879,5.3218
-W Aigner,Europe,King's College London,12,51.5115,-0.116
+J Tierny,Europe,CNRS,10,48,1.5
+J Fekete,Europe,Universite Paris-Saclay,6,48.7098,2.1653
+N Boukhelifa,Europe,Universite Paris-Saclay,5,47.9,2.55
+P Vázquez,Europe,Polytechnic University of Catalonia,3,41.388,2.1133
+A Slingsby,Europe,City University of London,4,52.3,0
+J Wood,Europe,City University of London,4,51.7,-0.6
+W Aigner,Europe,King's College London,12,51.7,0.6
+A Abdul-Rahman,Europe,King's College London,3,51.1,0
+R Laramee,Europe,University of Nottingham,17,53.8,-1.1
+H Fang,Europe,Loughborough University,0,52.95,-1.1
+H Carr,Europe,University of Leeds,11,54.5,-1.555
+C Turkay,Europe,University of Warwick,8,52.4,-1.5615
+D Archambault,Europe,Swansea University,8,51.6092,-3.98
+R Minghim,Europe,University College Cork,1,51.8935,-8.4921
+B Santos,Europe,University of Aveiro,1,40.63,-8.6571
+A Satyanarayan,North America,MIT,4,41.7,-71
+J Beyer,North America,Harvard University,13,42.5,-71.3
+R Chang,North America,Tufts University,9,43.1,-71.05
+D Laidlaw,North America,Brown University,10,41.8,-72
+Y Chiang,North America,New York University,6,41.05,-74.35
+C Silva,North America,New York University,5,40.5,-73.7
+D Silver,North America,Rutgers University,3,40.1,-75
+C Healey,North America,NC State University,6,35.85,-78.6821
+J Yang,North America,University of North Carolina at Charlotte,3,35,-80.2
+W Dou,North America,University of North Carolina at Charlotte,3,35.4,-80.9
+H Shen,North America,Ohio State University,9,40.0067,-83.0305
+J Stasko,North America,Georgia Institute of Technology,10,33.4,-84.1
+A Endert,North America,Georgia Institute of Technology,7,34,-84.7
+D Ebert,North America,Purdue University,18,40.1,-86.6
+X Tricoche,North America,Purdue University,9,40.7,-87.3
+E Marai,North America,University of Illinois Chicago,6,41.8696,-87.6496
+D Keefe,North America,University of Minnesota,6,44.974,-93.2277
+H Yu,North America,University of Nebraska–Lincoln,6,40.8202,-96.7005
+C Görg,North America,University of Colorado,9,40.0076,-105.2659
+K Moreland,North America,Sandia National Laboratories,1,35.0537,-106.529
+J Levine,North America,University of Arizona,9,32.2319,-110.9501
+A Knoll,North America,University of Utah,13,40.4,-111.6
+A Lex,North America,University of Utah,11,41.1,-112.1
+H Bhatia,North America,Lawrence Livermore National Laboratory,6,37.5,-121.5
+G Weber,North America,Lawrence Berkeley National Laboratory,9,37.8759,-122.2501
+J Heer,North America,University of Washington,4,47.2451,-122.438
+J Bernard,North America,University of British Columbia,9,49.2606,-123.246
+E Zhang,North America,Oregon State University,9,44.5638,-123.2794

@@ -14,9 +14,9 @@ var width = w,
     height = multiplier*830;
 
 var projection = d3.geoMercator()
-  .center([0, 40])
-  .rotate([50, 0])
-  .scale(460)
+  .center([0, 42])
+  .rotate([110, 0])
+  .scale(250)
   .translate([width / 2, height / 2])
 
 var svg = d3.select("body").append("svg")
@@ -54,7 +54,7 @@ function topUnis(){
     {
 
         var uniColors= d3.scaleLinear()
-                .domain([4,11])
+                .domain([1,11])
                 .range(["#fcfbfd","#54278f"]);
 
         svg.append("g")
@@ -73,10 +73,10 @@ function topUnis(){
             .style('top', (d3.event.pageY +40) + 'px')
           })
           .on('mouseout', function(d) {tooltip.html('')})
-        .attr("x",-4)
-        .attr("y",-4)
-        .attr("width",8)
-        .attr("height",8)
+        .attr("x",-2)
+        .attr("y",-2)
+        .attr("width",4)
+        .attr("height",4)
         .style("stroke", "black")
         .style("fill", function(d) { return uniColors(d.Affiliations);})
         .attr("transform", function(d) { return "translate(" + projection([d.lng,d.lat]) + ")" + " rotate(45)"; }) 
@@ -93,7 +93,7 @@ function topUnis(){
 
     
     var zoom = d3.zoom()
-    .scaleExtent([1, 3])
+    .scaleExtent([1, 4])
     .on('zoom', function() {
         svg.selectAll('g')
          .attr('transform', d3.event.transform);
@@ -116,7 +116,7 @@ function topResearchers(){
     {
 
         var resColors= d3.scaleLinear()
-                .domain([12,20])
+                .domain([2,20])
                 .range(["#fcfbfd","#54278f"]);
 
         svg.append("g")
@@ -130,15 +130,15 @@ function topResearchers(){
               .style('opacity', .9)
               .style('pointer-events', 'none')
           
-            tooltip.html('<div style=" font-weight: bold">' +d.Name+'<br>Institution: '+d.Affiliation+'<br>Connections: '+d.count+'</div>')
+            tooltip.html('<div style=" font-weight: bold">' +d.name+'<br>Institution: '+d.institution+'<br>Connections: '+d.count+'</div>')
             .style('left', (d3.event.pageX -65) + 'px')
             .style('top', (d3.event.pageY +40) + 'px')
           })
           .on('mouseout', function(d) {tooltip.html('')})
-        .attr("x",-4)
-        .attr("y",-4)
-        .attr("width",8)
-        .attr("height",8)
+        .attr("x",-2)
+        .attr("y",-2)
+        .attr("width",4)
+        .attr("height",4)
         .style("stroke", "black")
         .style("fill", function(d) { return resColors(d.count);})
         .attr("transform", function(d) { return "translate(" + projection([d.lng,d.lat]) + ")" + " rotate(45)"; })

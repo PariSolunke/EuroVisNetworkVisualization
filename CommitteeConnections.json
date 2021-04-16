@@ -439,6 +439,18 @@
         "connection": "Uni"
       },
       {
+        "source": "A Abdul-Rahman",
+        "target": "W Aigner",
+        "value": "King's College London",
+        "connection": "Uni"
+      },
+      {
+        "source": "W Aigner",
+        "target": "J Beyer",
+        "value": "TU Wien",
+        "connection": "Uni"
+      },
+       {
         "source": "W Aigner",
         "target": "J Beyer",
         "value": "TU Wien",
@@ -1070,6 +1082,18 @@
       },
       {
         "source": "T Ertl",
+        "target": "C Rezk-Salama",
+        "value": "University of Erlangen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
+        "target": "A Vilanova",
+        "value": "University of Erlangen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
+        "source": "T Ertl",
         "target": "R Westermann",
         "value": "University of Erlangen-Nuremberg",
         "connection": "Uni"
@@ -1581,7 +1605,13 @@
       {
         "source": "C Rezk-Salama",
         "target": "A Vilanova",
-        "value": "University of Erlagen-Nuremberg",
+        "value": "University of Erlangen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
+        "source": "C Rezk-Salama",
+        "target": "R Westermann",
+        "value": "University of Erlangen-Nuremberg",
         "connection": "Uni"
       },
       {
@@ -1795,6 +1825,12 @@
         "connection": "Uni"
       },
       {
+        "source": "A Vilanova",
+        "target": "R Westermann",
+        "value": "University of Erlangen-Nuremberg",
+        "connection": "Uni"
+      },
+      {
         "source": "G Weber",
         "target": "H Yu",
         "value": "University of California at Davis",
@@ -1869,8 +1905,8 @@
       {
         "source": "N Boukhelifa",
         "target": "J Fekete",
-        "value": "0",
-        "connection": "Research"
+        "value": "Universite Paris-Saclay",
+        "connection": "Uni"
       },
       {
         "source": "N Boukhelifa",
@@ -1935,8 +1971,8 @@
       {
         "source": "Y Chiang",
         "target": "C Silva",
-        "value": "0",
-        "connection": "Research"
+        "value": "New York University",
+        "connection": "Uni"
       },
       {
         "source": "B Csébfalvi",

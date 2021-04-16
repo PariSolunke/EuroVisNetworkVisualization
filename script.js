@@ -94,8 +94,31 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
   unis.sort();
 
   unis.forEach(addOption);
+  uniDict={}
   
+  /*
+  unis.forEach(function(uni) {
+    let authSet = new Set()
+    uniDict[uni]=0
+    CommitteeConnections.links.forEach(function(link) {
+      if (link.value==uni)
+      {
+        console.log(uni)
+        authSet.add(link.source)
+        authSet.add(link.target)
 
+      }
+      uniDict[uni]=authSet.size;
+
+
+
+    })
+    
+     });
+*/
+//console.log(JSON.stringify(uniDict));
+
+console.log(JSON.stringify(nodes));
 
 var group = svg.selectAll("g")
     .data(nodes)
