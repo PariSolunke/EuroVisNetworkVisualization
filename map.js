@@ -44,22 +44,41 @@ topUnis()
 
 
 function topUnis(){
-    svg.selectAll("rect").remove()
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 1,
+        max: 11,
+        values: [ 1, 11 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).html( "Filter by No. of Affiliations: " + ui.values[ 0 ] + "-" + ui.values[ 1 ] );
+          drawUnis()
 
+        }
+      });
+      $( "#amount" ).html( "Filter by No. of Affiliations: " + $( "#slider-range" ).slider( "values", 0 ) +
+        "-" + $( "#slider-range" ).slider( "values", 1 ) );
+        drawUnis()
    /* var marker = d3.symbol()
             .type(d3.symbolDiamond)
             .size(40)
 */
+    function drawUnis(){
     d3.csv("topUnis.csv").then(function(uniData) 
     {
+        svg.selectAll("rect").remove()
+
+        let low=$( "#slider-range" ).slider( "values", 0 )
+        let high=$( "#slider-range" ).slider( "values", 1 )
+        let filtData=uniData.filter(d => (d.Affiliations>=low && d.Affiliations<=high));
 
         var uniColors= d3.scaleLinear()
                 .domain([1,11])
                 .range(["#fcfbfd","#54278f"]);
 
+
         svg.append("g")
         .selectAll("rect")
-        .data(uniData)
+        .data(filtData)
         .enter()
         .append('rect')
         .on('mouseover', function(d) {
@@ -102,11 +121,34 @@ function topUnis(){
 
 svg.call(zoom);
     
-}
+}}
 
 
 function topResearchers(){
-    svg.selectAll("rect").remove();
+
+ $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 20,
+        values: [ 0, 20 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).html( "Filter by No. of Connections: " + ui.values[ 0 ] + "-" + ui.values[ 1 ] );
+          drawResearchers()
+
+
+        }
+      });
+      $( "#amount" ).html( "Filter by No. of Connections: " + $( "#slider-range" ).slider( "values", 0 ) +
+        "-" + $( "#slider-range" ).slider( "values", 1 ) );
+        drawResearchers()
+   /* var marker = d3.symbol()
+            .type(d3.symbolDiamond)
+            .size(40)
+*/
+    function drawResearchers(){
+   
+        svg.selectAll("rect").remove();
+
 
    /* var marker = d3.symbol()
             .type(d3.symbolDiamond)
@@ -114,14 +156,16 @@ function topResearchers(){
 */
     d3.csv("topResearchers.csv").then(function(resData) 
     {
-
+        let low=$( "#slider-range" ).slider( "values", 0 )
+        let high=$( "#slider-range" ).slider( "values", 1 )
+        let filtData=resData.filter(d => (d.count>=low && d.count<=high));
         var resColors= d3.scaleLinear()
-                .domain([2,20])
+                .domain([0,20])
                 .range(["#fcfbfd","#54278f"]);
 
         svg.append("g")
         .selectAll("rect")
-        .data(resData)
+        .data(filtData)
         .enter()
         .append('rect')
         .on('mouseover', function(d) {
@@ -166,6 +210,7 @@ function topResearchers(){
 
 svg.call(zoom);
     
+}
 }
 
 $('#selectType').on('change', function() {
