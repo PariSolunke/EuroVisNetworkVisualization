@@ -13,6 +13,8 @@ var margin = {top: 20, right: 20, bottom: 0, left: 20},
     height = multiplier*830;
 var selected=-1;
 var uniSelect=document.getElementById("uniSelect");
+var orderSelect=document.getElementById("orderSelect");
+
 
 var tooltip = d3.select('body')
 .append('div')
@@ -28,18 +30,28 @@ var x = d3.scaleLinear().range([0, width]),
     y = d3.scaleLinear().range([0, height]);
 
 
-var svg = d3.select("#viz").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  
 
 d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
-  var matrix = [],
-      nodes = CommitteeConnections.nodes,
-      n = nodes.length;
+  draw();
+  function draw(){
+
+document.getElementById("viz").innerHTML="";
+
+var svg = d3.select("#viz").append("svg")
+.attr("width", width + margin.left + margin.right)
+.attr("height", height + margin.top + margin.bottom)
+.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
+  var nodes = CommitteeConnections.nodes;
   
+      var selOrder=orderSelect.options[orderSelect.selectedIndex].value;
+      console.log("SelOrder:"+selOrder)
+  if(selOrder==0)        
   nodes.sort((a, b) => (a.group > b.group) ? 1 : (a.group === b.group) ? ((a.name > b.name) ? 1 : -1) : -1 );
+  else
+  nodes.sort((a, b) => (a.year > b.year) ? 1 : (a.year === b.year) ? ((a.name > b.name) ? 1 : -1) : -1 );
     
 
   // Compute index per node.
@@ -48,12 +60,11 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
     node.count = 0;
     node.targets=[]
     node.convalues=[]
-    matrix[i] = d3.range(n).map(function(j) { return {x: j, y: i, z: 0, connection:"", value:""}; });
   });
 
   let uniSet = new Set()
   
-  // Convert links to matrix; count character occurrences.
+  
   CommitteeConnections.links.forEach(function(link) {
     var sindex,tindex,con,val;
     for (i = 0; i < 84; i++) 
@@ -74,19 +85,13 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
       }
     }
    
-    matrix[sindex][tindex].z += 1;
-    matrix[tindex][sindex].z += 1;
-    matrix[sindex][tindex].connection=link.connection;
-    matrix[sindex][tindex].value=link.value;
-    matrix[tindex][sindex].value = link.value;
-    matrix[tindex][sindex].connection = link.connection;
     nodes[sindex].count += 1;
     nodes[tindex].count += 1;
     
     
   });
 
-  // The default sort order.
+  
   x.domain([0, 6]);
   y.domain([0, 14]);
   uniSet.delete("0");
@@ -118,7 +123,6 @@ d3.json("CommitteeConnections.json").then(function(CommitteeConnections) {
 */
 //console.log(JSON.stringify(uniDict));
 
-console.log(JSON.stringify(nodes));
 
 var group = svg.selectAll("g")
     .data(nodes)
@@ -149,10 +153,10 @@ group.append("text")
 
 group.append("text")
     .attr("transform", function(d, i) { return "translate("+0.9*(width/6)/2+"," + (height/14)/2 + ")"; })
-    .text(function(d) { return d.group})
+    .text(function(d) { if(selOrder==0) return d.group; else return d.year;})
     .attr("text-anchor", "middle")
-    .style("font-size", (multiplier*12.5)+"px")
-    .attr("dy","1em");
+    .style("font-size", (multiplier*13)+"px")
+    .attr("dy","1.1em");
   
 
   function mouseoverCell(element) {
@@ -321,7 +325,19 @@ $('table').css({'width' : (multiplier*450)+'px'});
 $('table').css({'border-spacing' : '1 '+(multiplier*7)+'px'});
 
 $('#uniSelect').on('change', function() {
-  changeSelect();});
+  changeSelect();
+
+});
+  
+
 
 cellClick(document.getElementById("A Abdul-Rahman"))  
+}
+$('#orderSelect').on('change', function() {
+  console.log("change")
+  draw();
+
 });
+
+});
+

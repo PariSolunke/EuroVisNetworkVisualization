@@ -3,426 +3,509 @@
       {
         "name": "A Abdul-Rahman",
         "group": "Europe",
-        "institution": "King's College London"
+        "institution": "King's College London",
+        "year":2006
       },
       {
         "name": "W Aigner",
         "group": "Europe",
-        "institution": "King's College London"
-        
+        "institution": "St. Poelten University of Applied Sciences",
+        "year":2006
 
       },
       {
         "name": "G Andrienko",
         "group": "Europe",
-        "institution": "Fraunhofer Institute IAIS"
+        "institution": "Fraunhofer Institute IAIS",
+        "year":1992
         
       },
       {
         "name": "D Archambault",
         "group": "Europe",
-        "institution": "Swansea University"
+        "institution": "Swansea University",
+        "year":2008
       },
       {
         "name": "J Bernard",
         "group": "North America",
-        "institution": "University of British Columbia"
+        "institution": "University of British Columbia",
+        "year":2015
       },
       {
         "name": "J Beyer",
         "group": "North America",
-        "institution": "Harvard University"
+        "institution": "Harvard University",
+        "year":2009
       },
       {
         "name": "H Bhatia",
         "group": "North America",
-        "institution": "Lawrence Livermore National Laboratory"
+        "institution": "Lawrence Livermore National Laboratory",
+        "year":2014
       },
       {
         "name": "T Blascheck",
         "group": "Europe",
-        "institution": "University of Stuttgart"
+        "institution": "University of Stuttgart",
+        "year":2017
       },
       {
         "name": "N Boukhelifa",
         "group": "Europe",
-        "institution": "Universite Paris-Saclay"
+        "institution": "Universite Paris-Saclay",
+        "year":2006
       },
       {
         "name": "S Bruckner",
         "group": "Europe",
-        "institution": "University of Bergen"
+        "institution": "University of Bergen",
+        "year":2008
       },
       {
         "name": "H Carr",
         "group": "Europe",
-        "institution": "University of Leeds"
+        "institution": "University of Leeds",
+        "year":2004
       },
       {
         "name": "R Chang",
         "group": "North America",
-        "institution": "Tufts University"
+        "institution": "Tufts University",
+        "year":2009
       },
       {
         "name": "W Chen",
         "group": "Asia",
-        "institution": "Zhejiang University"
+        "institution": "Zhejiang University",
+        "year":2002
       },
       {
         "name": "Y Chiang",
         "group": "North America",
-        "institution": "New York University"
+        "institution": "New York University",
+        "year":1995
       },
       {
         "name": "B Csébfalvi",
         "group": "Europe",
-        "institution": "Budapest University of Technology and Economics"
+        "institution": "Budapest University of Technology and Economics",
+        "year":2001
       },
       {
         "name": "S Diehl",
         "group": "Europe",
-        "institution": "Trier University"
+        "institution": "Trier University",
+        "year":1996
       },
       {
         "name": "W Dou",
         "group": "North America",
-        "institution": "University of North Carolina at Charlotte"
+        "institution": "University of North Carolina at Charlotte",
+        "year":2012
       },
       {
         "name": "A Ebert",
         "group": "Europe",
-        "institution": "University of Kaiserslautern"
+        "institution": "University of Kaiserslautern",
+        "year":2004
       },
       {
         "name": "D Ebert",
         "group": "North America",
-        "institution": "Purdue University"
+        "institution": "Purdue University",
+        "year":1991
       },
       {
         "name": "A Endert",
         "group": "North America",
-        "institution": "Georgia Institute of Technology"
+        "institution": "Georgia Institute of Technology",
+        "year":2012
       },
       {
         "name": "T Ertl",
         "group": "Europe",
-        "institution": "University of Stuttgart"
+        "institution": "University of Stuttgart",
+        "year":1988
       },
       {
         "name": "H Fang",
         "group": "Europe",
-        "institution": "Loughborough University"
+        "institution": "Loughborough University",
+        "year":2006
       },
       {
         "name": "J Fekete",
         "group": "Europe",
-        "institution": "Universite Paris-Saclay"
+        "institution": "Universite Paris-Saclay",
+        "year":1996
       },
       {
         "name": "I Fujishiro",
         "group": "Asia",
-        "institution": "Keio University"
+        "institution": "Keio University",
+        "year":1988
       },
       {
         "name": "C Görg",
         "group": "North America",
-        "institution": "University of Colorado"
+        "institution": "University of Colorado",
+        "year":2005
       },
       {
         "name": "C Healey",
         "group": "North America",
-        "institution": "NC State University"
+        "institution": "NC State University",
+        "year":1996
       },
       {
         "name": "J Heer",
         "group": "North America",
-        "institution": "University of Washington"
+        "institution": "University of Washington",
+        "year":2008
       },
       {
         "name": "M Hlawitschka",
         "group": "Europe",
-        "institution": "Leipzig University of Applied Sciences"
+        "institution": "Leipzig University of Applied Sciences",
+        "year":2008
       },
       {
         "name": "Y Jang",
         "group": "Asia",
-        "institution": "Sejong University"
+        "institution": "Sejong University",
+        "year":2007
       },
       {
         "name": "D Keefe",
         "group": "North America",
-        "institution": "University of Minnesota"
+        "institution": "University of Minnesota",
+        "year":2007
       },
       {
         "name": "A Knoll",
         "group": "North America",
-        "institution": "University of Utah"
+        "institution": "University of Utah",
+        "year":2009
       },
       {
         "name": "S Koch",
         "group": "Europe",
-        "institution": "University of Stuttgart"
+        "institution": "University of Stuttgart",
+        "year":2012
       },
       {
         "name": "J Kohlhammer",
         "group": "Europe",
-        "institution": "Fraunhofer IGD"
+        "institution": "Fraunhofer IGD",
+        "year":2005
       },
       {
         "name": "B Kozlikova",
         "group": "Europe",
-        "institution": "Masaryk University"
+        "institution": "Masaryk University",
+        "year":2011
       },
       {
         "name": "D Laidlaw",
         "group": "North America",
-        "institution": "Brown University"
+        "institution": "Brown University",
+        "year":1995
       },
       {
         "name": "R Laramee",
         "group": "Europe",
-        "institution": "University of Nottingham"
+        "institution": "University of Nottingham",
+        "year":2005
       },
       {
         "name": "J Levine",
         "group": "North America",
-        "institution": "University of Arizona"
+        "institution": "University of Arizona",
+        "year":2009
       },
       {
         "name": "A Lex",
         "group": "North America",
-        "institution": "University of Utah"
+        "institution": "University of Utah",
+        "year":2012
       },
       {
         "name": "E Marai",
         "group": "North America",
-        "institution": "University of Illinois Chicago"
+        "institution": "University of Illinois Chicago",
+        "year":2007
       },
       {
         "name": "K Matkovic",
         "group": "Europe",
-        "institution": "VRVis Research Center"
+        "institution": "VRVis Research Center",
+        "year":1998
       },
       {
         "name": "S Miksch",
         "group": "Europe",
-        "institution": "TU Wien"
+        "institution": "TU Wien",
+        "year":1990
       },
       {
         "name": "R Minghim",
         "group": "Europe",
-        "institution": "University College Cork"
+        "institution": "University College Cork",
+        "year":1995
       },
       {
         "name": "K Moreland",
         "group": "North America",
-        "institution": "Sandia National Laboratories"
+        "institution": "Sandia National Laboratories",
+        "year":2004
       },
       {
         "name": "S Oeltze",
         "group": "Europe",
-        "institution": "Otto-von-Guericke-University Magdeburg"
+        "institution": "Otto-von-Guericke-University Magdeburg",
+        "year":2010
       },
       {
         "name": "M Pohl",
         "group": "Europe",
-        "institution": "TU Wien"
+        "institution": "TU Wien",
+        "year":1993
       },
       {
         "name": "B Preim",
         "group": "Europe",
-        "institution": "Otto-von-Guericke-University Magdeburg"
+        "institution": "Otto-von-Guericke-University Magdeburg",
+        "year":1998
       },
       {
         "name": "H Qu",
         "group": "Asia",
-        "institution": "Hong Kong University of Science and Technology"
+        "institution": "Hong Kong University of Science and Technology",
+        "year":2004
       },
       {
         "name": "C Rezk-Salama",
         "group": "Europe",
-        "institution": "Trier University"
+        "institution": "Trier University",
+        "year":2002
       },
       {
         "name": "T Ropinski",
         "group": "Europe",
-        "institution": "Ulm University"
+        "institution": "Ulm University",
+        "year":2004
       },
       {
         "name": "P Rosenthal",
         "group": "Europe",
-        "institution": "University of Rostock"
+        "institution": "University of Rostock",
+        "year":2009
       },
       {
         "name": "F Sadlo",
         "group": "Europe",
-        "institution": "Heidelberg University"
+        "institution": "Heidelberg University",
+        "year":2010
       },
       {
         "name": "B Santos",
         "group": "Europe",
-        "institution": "University of Aveiro"
+        "institution": "University of Aveiro",
+        "year":1989
       },
       {
         "name": "G Santucci",
         "group": "Europe",
-        "institution": "Sapienza University of Rome"
+        "institution": "Sapienza University of Rome",
+        "year":1992
       },
       {
         "name": "A Satyanarayan",
         "group": "North America",
-        "institution": "MIT"
+        "institution": "MIT",
+        "year":2017
       },
       {
         "name": "G Scheuermann",
         "group": "Europe",
-        "institution": "Leipzig University"
+        "institution": "Leipzig University",
+        "year":1999
       },
       {
         "name": "T Schreck",
         "group": "Europe",
-        "institution": "Graz University of Technology"
+        "institution": "Graz University of Technology",
+        "year":2006
       },
       {
         "name": "T Schultz",
         "group": "Europe",
-        "institution": "University of Bonn"
+        "institution": "University of Bonn",
+        "year":2009
       },
       {
         "name": "H Schulz",
         "group": "Europe",
-        "institution": "Aarhus University"
+        "institution": "Aarhus University",
+        "year":2010
       },
       {
         "name": "M Sedlmair",
         "group": "Europe",
-        "institution": "University of Stuttgart"
+        "institution": "University of Stuttgart",
+        "year":2010
       },
       {
         "name": "H Shen",
         "group": "North America",
-        "institution": "Ohio State University"
+        "institution": "Ohio State University",
+        "year":1998
       },
       {
         "name": "C Silva",
         "group": "North America",
-        "institution": "New York University"
+        "institution": "New York University",
+        "year":1996
       },
       {
         "name": "D Silver",
         "group": "North America",
-        "institution": "Rutgers University"
+        "institution": "Rutgers University",
+        "year":1988
       },
       {
         "name": "A Slingsby",
         "group": "Europe",
-        "institution": "City University of London"
+        "institution": "City University of London",
+        "year":2006
       },
       {
         "name": "J Stasko",
         "group": "North America",
-        "institution": "Georgia Institute of Technology"
+        "institution": "Georgia Institute of Technology",
+        "year":1989
       },
       {
         "name": "S Takahashi",
         "group": "Asia",
-        "institution": "University of Aizu"
+        "institution": "University of Aizu",
+        "year":1997
       },
       {
         "name": "H Theisel",
         "group": "Europe",
-        "institution": "Otto-von-Guericke-University Magdeburg"
+        "institution": "Otto-von-Guericke-University Magdeburg",
+        "year":1996
       },
       {
         "name": "J Tierny",
         "group": "Europe",
-        "institution": "CNRS"
+        "institution": "CNRS",
+        "year":2008
       },
       {
         "name": "C Tominski",
         "group": "Europe",
-        "institution": "University of Rostock"
+        "institution": "University of Rostock",
+        "year":2006
       },
       {
         "name": "M Tory",
         "group": "North America",
-        "institution": "Tableau Software"
+        "institution": "Tableau Software",
+        "year":2004
       },
       {
         "name": "X Tricoche",
         "group": "North America",
-        "institution": "Purdue University"
+        "institution": "Purdue University",
+        "year":2002
       },
       {
         "name": "C Turkay",
         "group": "Europe",
-        "institution": "University of Warwick"
+        "institution": "University of Warwick",
+        "year":2014
       },
       {
         "name": "A Vilanova",
         "group": "Europe",
-        "institution": "Eindhoven University of Technology"
+        "institution": "Eindhoven University of Technology",
+        "year":2001
         
       },
       {
         "name": "P Vázquez",
         "group": "Europe",
-        "institution": "Universitat Politècnica de Catalunya"
+        "institution": "Universitat Politècnica de Catalunya",
+        "year":2003
       },
       {
         "name": "G Weber",
         "group": "North America",
-        "institution": "Lawrence Berkeley National Laboratory"
+        "institution": "Lawrence Berkeley National Laboratory",
+        "year":2003
       },
       {
         "name": "T Weinkauf",
         "group": "Europe",
-        "institution": "KTH Royal Institute of Technology"
+        "institution": "KTH Royal Institute of Technology",
+        "year":2008
       },
       {
         "name": "M Westenberg",
         "group": "Europe",
-        "institution": "Eindhoven University of Technology"
+        "institution": "Eindhoven University of Technology",
+        "year":2001
       },
       {
         "name": "R Westermann",
         "group": "Europe",
-        "institution": "Technical University of Munich"
+        "institution": "Technical University of Munich",
+        "year":1996
       },
       {
         "name": "J Wood",
         "group": "Europe",
-        "institution": "City University of London"
+        "institution": "City University of London",
+        "year":1996
       },
       {
         "name": "J Yang",
         "group": "North America",
-        "institution": "University of North Carolina at Charlotte"
+        "institution": "University of North Carolina at Charlotte",
+        "year":2005
       },
       {
         "name": "H Yen",
         "group": "Asia",
-        "institution": "National Taiwan University"
+        "institution": "National Taiwan University",
+        "year":1986
       },
       {
         "name": "H Yu",
         "group": "North America",
-        "institution": "University of Nebraska–Lincoln"
+        "institution": "University of Nebraska–Lincoln",
+        "year":2008
       },
       {
         "name": "X Yuan",
         "group": "Asia",
-        "institution": "Peking University"
+        "institution": "Peking University",
+        "year":2006
       },
       {
         "name": "E Zhang",
         "group": "North America",
-        "institution": "Oregon State University"
+        "institution": "Oregon State University",
+        "year":2004
       },
       {
         "name": "J Zhang",
         "group": "Asia",
-        "institution": "Tianjin University"
+        "institution": "Tianjin University",
+        "year":2004
       }
     ],
     "links": [
@@ -436,12 +519,6 @@
         "source": "A Abdul-Rahman",
         "target": "R Laramee",
         "value": "Swansea University",
-        "connection": "Uni"
-      },
-      {
-        "source": "A Abdul-Rahman",
-        "target": "W Aigner",
-        "value": "King's College London",
         "connection": "Uni"
       },
       {
